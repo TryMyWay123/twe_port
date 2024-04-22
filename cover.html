@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyler We.com</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- JavaScript and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-lF0k8mzlK9V+4IbmDAhZ8u7mGKTUrFf3lY3Y0jLmKFgCkcFeBOYMRa6GRHqId7x5" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shCk+5KVcL1e+9z9uAhrppHy6ZO4+gnB+8f2D" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle, rgba(51,51,51,1) 0%, rgba(102,102,102,1) 35%, rgba(238,238,238,1) 100%); /* Background gradient */
+            font-family: Arial, sans-serif; /* Font family */
+        }
+
+        .container {
+            text-align: center;
+            color: #fff; /* Text color */
+        }
+
+        h1 {
+            font-size: 6em;
+            margin-bottom: 30px; /* Space below the title */
+        }
+
+        .enter-button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background-color: #007bff; /* Button color */
+            color: #fff; /* Button text color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+            .enter-button:hover {
+                background-color: #0056b3; /* Hover color */
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Tyler We. Portfolio</h1>
+        <button class="enter-button" onclick="enterSite()">Enter</button>
+    </div>
+    <script>
+        function enterSite() {
+            // Redirect to your desired location
+            window.location.href = "about.html";
+        }
+    </script>
+</body>
+</html>

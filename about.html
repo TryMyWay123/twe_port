@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>About Page</title>
+    <style>
+        body{
+            padding: 24px;
+            margin: 32px;
+
+        }
+
+        .overlay {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0, 0.9);
+            overflow-x: hidden;
+            transition: 0.5s;
+        }
+
+        .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+            .overlay a:hover, .overlay a:focus {
+                color: #f1f1f1;
+            }
+
+        .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .overlay a {
+                font-size: 20px
+            }
+
+            .overlay .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+            }
+        }
+
+        span {
+            position: relative;
+            top: 300px;
+            right: 50px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="store.html">Games</a>
+            <a href="">Digital Designs</a>
+        </div>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <h1>
+    </h1>
+    <hr />
+    <div>
+        <article>
+            Hello,
+            I am Tyler and this is my web based porfolio. I am currently pursuing a video game testing and design career, but have other skills besides game design. Taking life from the front and the back ends of development I am slowly but surly becoming a full stack developer. Mostly using python and java to build applications that are suitable for remote business, job specified and trained AI bots, games, and much much more. Machine learning and AI is my future goals because I want to help make peoples lives easier. With AI job specified bots you can work two jobs, or use them to put out house fires or defuse a violent situation.
+        </article>
+        <br />
+        <h2>Skills</h2><br />
+        <ol>
+            <li>HTML</li>
+            <li>CSS / BootStrap</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>Django</li>
+            <li>Flask</li>
+            <li>Machine Learning / AI</li>
+        </ol>
+    </div>
+    <hr />
+    <footer>
+        <p>&copy; 2024 HTML Game Store. All rights reserved.</p>
+    </footer>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+    <hr />
+    <footer>
+    </footer>
+</body>
+</html>
